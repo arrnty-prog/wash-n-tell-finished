@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*, *::before, *::after {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+body { margin: 0; font-family: 'Plus Jakarta Sans', sans-serif !important;}
+.page-content { padding: 24px 32px; background-color: #F4F7FE;  min-height: 100vh; }
+.page-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; gap: 12px; flex-wrap: wrap; }
+.page-head h2 { margin: 0; font-size: 22px; }
+.ant-form-item-label > label {
+  font-weight: 500 !important;
+}
+
+.ant-layout-sider { border-right: 1px solid #e2e8f0; }
+/* Lines the Bulk Price card up with the top edge of the first service card (label is 20px + 8px gap) */
+@media (min-width: 1200px) { .bulk-price-col { padding-top: 28px; } }
+/* Login page: blue gradient panel with two soft circles in the corners */
+.login-hero { position: relative; overflow: hidden; background: linear-gradient(160deg, #2f6df0 0%, #1e40af 100%); }
+.login-hero::before, .login-hero::after { content: ''; position: absolute; border-radius: 50%; background: rgba(255, 255, 255, 0.1); }
+.login-hero::before { width: 280px; height: 280px; top: -90px; left: -90px; }
+.login-hero::after { width: 260px; height: 260px; bottom: -70px; right: -50px; }
+@media (max-width: 1400px) { .login-machine { display: none; } }
+.ant-table-thead > tr > th {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #8c8c8c !important;
+}
+.ant-table-tbody > tr > td {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.customer-table .ant-table-thead > tr > th {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #8c8c8c !important;
+  background: #fafafa;
+}
+
+.customer-table .ant-table-tbody > tr > td {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.customer-table .ant-table-tbody > tr:hover > td {
+  background: #fafafa !important;
+}
+.row-archived td { opacity: 0.55; }
+
+.qty-input input {
+  text-align: center;
+  font-weight: 700;
+}
